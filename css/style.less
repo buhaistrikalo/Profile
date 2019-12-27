@@ -12,6 +12,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;    
     font-size: 15px;
+    background-color: #f6f7fb;
 } 
 *,
 *:before,
@@ -20,7 +21,7 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
@@ -31,34 +32,52 @@ body{
 }
 .intro__inner{
     display: flex;
-    border-bottom: 1px solid fade(@grey, 30%);
+    border: 1px solid fade(black, 10%);
+    border-radius: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
 }
 .intro__content{ 
     padding-left: 1rem;
-    padding-top: 2rem;
-    width: 50%;
+    padding-top: 1.7rem;
+    width: 70%;
+}
+.intro__content :first-child{
+    padding-top: 0.4rem;
 }
 .intro__photo{
-
+    width: 30%;
+    margin: 1rem;
 }
 .intro__photo img{
-    width: 260px;
+    width: 220px;
     border-radius: 100%;
     
 }
 .intro__name{
-    font-size: 2rem;
-    color: @blue;
+    font-size: 1.7rem;
 }
 .intro__text{
     font-size: 1.2rem;
     color: @grey;
+}
+.intro__content p{
+  font-size: 1.2rem;
+  padding-top: 0.6rem;
+  
+}
+.intro__content_opacity-high{
+  opacity: 0.5;
+}
+.intro__color-blue{
+  color: @blue;
 }
 
 // footer + Social buttons
 footer{
     bottom: 0;
     height: 70px;
+    margin-top: 30px;
 }
 footer .middle{
     
